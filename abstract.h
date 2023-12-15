@@ -7,8 +7,7 @@ protected:
     class Node
     {
     public:
-        Node(T d): data(d) {}
-        Node(T d, Node* n): data(d), next(n) {}
+        Node(T d, Node* n = nullptr): data(d), next(n) {}
 
         T data;
         Node* next;
